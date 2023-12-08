@@ -14,7 +14,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.utils import to_categorical
 
-data = pd.read_csv('/content/malicious_phish.csv')
+data = pd.read_csv('malicious_phish.csv')
 
 le = LabelEncoder()
 data['type_encoded'] = le.fit_transform(data['type'])
